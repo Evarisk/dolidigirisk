@@ -118,7 +118,7 @@ class ActionsDigiriskdolibarr
 			}
 		}
 
-		print ajax_combobox('DIGIRISK_COLLECTIVE_AGREEMENT_TITLE');
+		print ajax_combobox('selectDIGIRISK_COLLECTIVE_AGREEMENT_TITLE');
 
 		if (!$error) {
 			$this->results = array('myreturn' => 999);
