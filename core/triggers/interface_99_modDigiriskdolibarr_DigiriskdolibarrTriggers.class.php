@@ -117,6 +117,7 @@ class InterfaceDigiriskdolibarrTriggers extends DolibarrTriggers
 				$actioncomm->label			 = $langs->trans('InformationsSharingGeneratedWithDolibarr');
 				$actioncomm->datep		 = $now;
 				$actioncomm->fk_element  = $object->id;
+				$actioncomm->userownerid  = $user->id;
 				$ret = $actioncomm->create($user);
 				break;
 
@@ -133,6 +134,7 @@ class InterfaceDigiriskdolibarrTriggers extends DolibarrTriggers
 				$actioncomm->label			 = $langs->trans('LegalDisplayGeneratedWithDolibarr');
 				$actioncomm->datep		 = $now;
 				$actioncomm->fk_element  = $object->id;
+				$actioncomm->userownerid  = $user->id;
 				$ret = $actioncomm->create($user);
 				break;
 
